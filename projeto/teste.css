@@ -1,0 +1,158 @@
+﻿* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #604d4d;
+}
+
+/* Style the header */
+.header {
+  background-color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 1%;
+}
+
+/* Left and right column */
+.column.side {
+  width: 25%;
+}
+
+/* Middle column */
+.column.middle {
+  width: 50%;
+  background-size: 1000px 800px;
+  background-color: #ffffff;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column.side, .column.middle {
+    width: 100%;
+  }
+}
+
+.button.gray {
+  background-color: rgb(174, 171, 170);
+  opacity: 0.6;
+  border: none;
+  color: rgb(96, 77, 75);
+  padding: 5px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18.75px;
+  font-family: "Georgia";
+}
+
+.button.gray:hover {
+  background-color: rgb(174, 171, 170);
+  opacity: 1;
+  border: none;
+  color: #d54346;
+  padding: 5px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18.75px;
+  font-family: "Georgia";
+}
+
+.button.red {
+  background-color: #d54346;
+  opacity: 0.6;
+  border: none;
+  color: rgb(0, 0, 0);
+  padding: 5px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18.75px;
+  font-family: "Georgia";
+}
+
+.button.red:hover {
+  background-color: #d54346;
+  opacity: 1;
+  border: none;
+  color: rgb(255, 255, 255);
+  padding: 5px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18.75px;
+  font-family: "Georgia";
+}
+.button.add {
+  background-color: #d54346;
+  opacity: 0.6;
+  border: none;
+  color: rgb(0, 0, 0);
+  padding: 5px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18.75px;
+  font-family: "Georgia";
+}
+
+.button.add:hover {
+  background-color: #1f65ce;
+  opacity: 1;
+  border: none;
+  color: rgb(255, 255, 255);
+  padding: 5px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18.75px;
+  font-family: "Georgia";
+}
+.button.black {
+  background-color: none;
+  opacity: 1;
+  border: none;
+  color: rgb(0, 0, 0);
+  padding: 0px 0px;
+  text-align: center;
+  text-decoration: none;
+  /*display: inline-block;*/
+  font-size: 20px;
+  font-family: "Constantia";
+}
